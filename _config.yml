@@ -8,10 +8,10 @@ description: >-
   Software Engineer Venice area.
   Passionate Forth programmer and ZX Spectrum Next developer since 1990.
 
-url: "https://mattsteeldue.github.io"          # Change to your final URL once live
+url: "https://debugdancerreborn.github.io"          # Change to your final URL once live
 baseurl: ""                                    # Leave empty for root domain
 
-repository: mattsteeldue/mattsteeldue.github.io   # Important for GitHub Pages
+repository: debugdancerreborn/debugdancerreborn.github.io   # Important for GitHub Pages
 
 # ---------------------------------------------------------------
 # Theme Settings (Remote Theme - Best for GitHub Pages)
