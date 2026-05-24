@@ -18,7 +18,7 @@ repository: debugdancerreborn/debugdancerreborn.github.io   # Important for GitH
 # ---------------------------------------------------------------
 
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"   # You can update the version later if needed
-minimal_mistakes_skin: "sunrise"                       # Options: default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+minimal_mistakes_skin: "neon"                       # Options: default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
 # ---------------------------------------------------------------
 # Build Settings
@@ -37,28 +37,28 @@ include:
 # ---------------------------------------------------------------
 
 author:
-  name: Matteo Vitturi
+  name: Rebenko Georgy
   avatar: "/assets/images/bio-photo.jpg"     # Upload your photo to /assets/images/
   bio: >-
-    Software Engineer with over 30 years of experience.
-    Long-time Forth enthusiast, creator of vForth, and active ZX Spectrum Next developer.
-  location: "Venice, Italy"
+    3D artist with over 5 years of experience.
+    Long-time Blender enthusiast, .
+  location: "Gyumri, Armenia"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/matteovitturi"   # Update with your exact LinkedIn URL
+      url: "https://www.linkedin.com/"   # Update with your exact LinkedIn URL
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mattsteeldue"
-    - label: "X / Twitter"
-      icon: "fab fa-fw fa-square-x-twitter"
-      url: "https://twitter.com/mattsteel"
+      url: "https://github.com/DebugdancerReborn"
+    - label: "Telegram"
+      icon: "fab fa-fw fa-telegram"
+      url: "t.me/Debugdancer"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:your-email@example.com"               # Use a professional or alias email
+      url: "mailto:gerrebenko@gmail.com"               # Use a professional or alias email
     - label: "FB"
       icon: "fab fa-fw fa-facebook"
-      url: "https://www.facebook.com/mattsteel.mattsteel"
+      url: ""
 
 # ---------------------------------------------------------------
 # Other Useful Settings
