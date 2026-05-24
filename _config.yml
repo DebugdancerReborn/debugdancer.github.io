@@ -57,7 +57,7 @@ author:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:gerrebenko@gmail.com"               # Use a professional or alias email
     - label: "Whatsapp"
-      icon: "fab fa-fw fa-square-whatsapp"
+      icon: "fab fa-fw fa-whatsapp"
       url: "https://wa.me/79036826563"
 
 # ---------------------------------------------------------------
