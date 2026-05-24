@@ -52,13 +52,13 @@ author:
       url: "https://github.com/DebugdancerReborn"
     - label: "Telegram"
       icon: "fab fa-fw fa-telegram"
-      url: "t.me/Debugdancer"
+      url: "https://t.me/Debugdancer"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:gerrebenko@gmail.com"               # Use a professional or alias email
-    - label: "FB"
-      icon: "fab fa-fw fa-facebook"
-      url: ""
+    - label: "Whatsapp"
+      icon: "fab fa-fw fa-square-whatsapp"
+      url: "https://wa.me/79036826563"
 
 # ---------------------------------------------------------------
 # Other Useful Settings
@@ -71,4 +71,4 @@ paginate_path: "/page/:num/"
 # Header / Navigation will be defined in _data/navigation.yml (create this file next)
 
 # Optional: Footer text
-footer_text: "&copy; Matteo Vitturi. All rights reserved."
+footer_text: "&copy; Rebenko Georgy. All rights reserved."
