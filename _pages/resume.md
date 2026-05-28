@@ -8,18 +8,18 @@ toc: true
 
 ### Rebenko Georgy
 
-**Senior Application Operations Engineer**  
+**hard surface 3D artist**  
 Gyumri, Armenia  
 
---[GitHub](https://github.com/mattsteeldue) • [YouTube](https://www.youtube.com/@mttsteel) • [X/Twitter](https://twitter.com/mattsteel) • [LinkedIn](https://www.linkedin.com/in/matteovitturi/) • [itch](https://mattsteel.itch.io)--
+~~[GitHub](https://github.com/mattsteeldue) • [YouTube](https://www.youtube.com/@mttsteel) • [X/Twitter](https://twitter.com/mattsteel) • [LinkedIn](https://www.linkedin.com/in/matteovitturi/) • [itch](https://mattsteel.itch.io)~~
 
 ---
 
 ### Professional Summary
 
-Senior IT professional with over 25 years of experience in technical analysis, application operations, and insurance systems. 
+I'm actively developing my skills in team management and digital design, aiming to apply my knowledge and expertise to real-world projects. I've been doing 3D modeling in Blender for about five years. During that time, I've created a number of personal works, participated three times in Ludum Dare game jams as a team lead and 3D artist, and taught tabletop role-playing game design to teenagers. 
 
-Skilled at translating complex business requirements into reliable technical solutions. Deep expertise in low-level programming and a lifelong passion for elegant, efficient code — particularly with the **Forth** language on retro computing platforms.
+I combine creative thinking with the organizational abilities I've honed through water expeditions and volunteer projects.
 
 ---
 
@@ -38,6 +38,20 @@ Skilled at translating complex business requirements into reliable technical sol
 
 - Analyzed insurance procedures and designed/implemented technical solutions.
 - Developed scripts, tools, and integrations to automate and support core business operations.
+
+---
+
+### Skills & Tools
+
+[ ] 3D Modeling: Blender (high-poly, game-ready), Substance Painter, basic Figma
+
+[ ] Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization)
+
+[ ] Leadership & Organization: team building, distributed workflow coordination, documentation management
+
+[ ] Water Tourism: Instructor (Class II routes), Deputy Leader (Class I routes), route planning, training organization
+
+[ ] Teaching: mentoring teenagers in game design and running role-playing games
 
 ---
 
