@@ -43,15 +43,15 @@ I combine creative thinking with the organizational abilities I've honed through
 
 ### Skills & Tools
 
-[ ] 3D Modeling: Blender (high-poly, game-ready), Substance Painter, basic Figma
+- 3D Modeling: Blender (high-poly, game-ready), Substance Painter, basic Figma
 
-[ ] Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization)
+- Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization)
 
-[ ] Leadership & Organization: team building, distributed workflow coordination, documentation management
+- Leadership & Organization: team building, distributed workflow coordination, documentation management
 
-[ ] Water Tourism: Instructor (Class II routes), Deputy Leader (Class I routes), route planning, training organization
+- Water Tourism: Instructor (Class II routes), Deputy Leader (Class I routes), route planning, training organization
 
-[ ] Teaching: mentoring teenagers in game design and running role-playing games
+- Teaching: mentoring teenagers in game design and running role-playing games
 
 ---
 
