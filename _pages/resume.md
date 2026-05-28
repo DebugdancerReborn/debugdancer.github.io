@@ -25,19 +25,19 @@ I combine creative thinking with the organizational abilities I've honed through
 
 ### Professional Experience
 
-**Senior Application Operations Engineer**  
-**Capgemini** — Venice Area, Italy  
-*2013 – Present*
+~~**Senior Application Operations Engineer**~~  
+~~**Capgemini** — Venice Area, Italy~~  
+~~*2013 – Present*~~
 
-- Provide application operations support and technical expertise for enterprise clients in the insurance sector.
-- Optimize critical systems, ensure stability, and drive continuous improvement of business processes.
+~~- Provide application operations support and technical expertise for enterprise clients in the insurance sector.~~
+~~- Optimize critical systems, ensure stability, and drive continuous improvement of business processes.~~
 
-**IT Technical Analyst**  
-**AIVE BST s.p.a. / AIVE** — Venice Area, Italy  
-*1998 – 2012*
+~~**IT Technical Analyst**~~  
+~~**AIVE BST s.p.a. / AIVE** — Venice Area, Italy~~  
+~~*1998 – 2012*~~
 
-- Analyzed insurance procedures and designed/implemented technical solutions.
-- Developed scripts, tools, and integrations to automate and support core business operations.
+~~- Analyzed insurance procedures and designed/implemented technical solutions.~~
+~~- Developed scripts, tools, and integrations to automate and support core business operations.~~
 
 ---
 
@@ -53,6 +53,7 @@ I combine creative thinking with the organizational abilities I've honed through
 
 - Teaching: mentoring teenagers in game design and running role-playing games
 
+---
 ---
 
 ### Education
