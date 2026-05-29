@@ -51,7 +51,7 @@ Served as Deputy Leader on a Class I expedition and as Instructor on a Class II 
 
 ### Skills & Tools
 
-- 3D Modeling: Blender (high-poly, low-poly, game-ready), Substance Painter (★{:.red}), Figma
+- 3D Modeling: Blender (high-poly, low-poly, game-ready), Substance Painter (<span style="color: #e74c3c;">★★★</span>)★★, Figma
 
 - Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization), git (file synchronization)
 
