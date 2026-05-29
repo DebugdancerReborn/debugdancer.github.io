@@ -1,3 +1,6 @@
+<style>
+  .red-text { color: #f21368; }
+</style>
 ---
 title: "Resume"
 permalink: /resume/
@@ -51,7 +54,11 @@ Served as Deputy Leader on a Class I expedition and as Instructor on a Class II 
 
 ### Skills & Tools
 
-- 3D Modeling: Blender (high-poly, low-poly, game-ready), Substance Painter (<span style="color: #e74c3c;">★★★</span>)★★, Figma
+- 3D Modeling:
+  - Blender (high-poly, low-poly, game-ready) <span class="red-text">★★★★★</span>
+  - Substance Painter (texture painting, baking) <span class="red-text">★★★</span>★★
+  - Figma <span class="red-text">★★★★</span>★
+  - Obsidian <span class="red-text">★★★</span>★★
 
 - Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization), git (file synchronization)
 
