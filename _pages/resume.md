@@ -53,9 +53,12 @@ Served as Deputy Leader on a Class I expedition and as Instructor on a Class II 
 
 - 3D Modeling:
   - Blender (high-poly, low-poly, game-ready) <span style="color: #e74c3c;">★★★★★</span>
+  - Substance Disigner (tile texture) <span style="color: #e74c3c;">★★★★</span>★
   - Substance Painter (texture painting, baking) <span style="color: #e74c3c;">★★★</span>★★
+  - Git <span style="color: #e74c3c;">★★★</span>★★
   - Figma <span style="color: #e74c3c;">★★★★</span>★
   - Obsidian <span style="color: #e74c3c;">★★★</span>★★
+  - Unity <span style="color: #e74c3c;">★★</span>★★★
 
 - Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization), git (file synchronization)
 
@@ -80,7 +83,7 @@ Moscow, Russia
 **Tourism instructor, leader**
 
 ---
-
+<div style="background: #f0f0f0; color: #2c3e50; padding: 10px;">
 ### Technical Skills
 
 - **Core Expertise**: Forth (expert level), Z80/Z80N Assembly, low-level programming, cross-compilation for 8-bit systems.
@@ -125,7 +128,7 @@ Author and maintainer of **vForth**, a Forth system for the ZX Spectrum 48K and 
 ### Additional Information
 
 Born and raised in Venice, Italy. After high school, completed military service with the Lagunari amphibious troops before graduating in Economics.
-
+</div>
 ---
 
 *Last updated: April 2026*
