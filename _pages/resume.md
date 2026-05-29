@@ -25,48 +25,55 @@ I combine creative thinking with the organizational abilities I've honed through
 
 ### Professional Experience
 
-~~**Senior Application Operations Engineer**~~  
-~~**Capgemini** — Venice Area, Italy~~  
-~~*2013 – Present*~~
+**ANO PO "IT HUB"** — Moscow, Russia  
+**Student**
+*2019 – Present*
 
-~~- Provide application operations support and technical expertise for enterprise clients in the insurance sector.~~
-~~- Optimize critical systems, ensure stability, and drive continuous improvement of business processes.~~
+- Ludum Dare (three times) — Team Lead, 3D Artist.
+Built teams, distributed tasks, and coordinated work via a Kanban board. Maintained a single project knowledge base in Obsidian and synced it, along with artists' working files, among team members using Syncthing.
+- High-Poly armor model.
+Created a detailed model in Blender based on historical sources and references.
+- Game-Ready grappling-hook model.
+Developed a game asset with a realistic texture look. Pipeline: Figma (concepts) → Blender (modeling) → Substance Painter (texturing).
 
-~~**IT Technical Analyst**~~  
-~~**AIVE BST s.p.a. / AIVE** — Venice Area, Italy~~  
-~~*1998 – 2012*~~
+**ANO "Первая вершина" / Pioneer squad "Сигнальщики"** — Moscow, Russia  
+**Volonteer instructor and teacher**  
+*2020 – 2026*
 
-~~- Analyzed insurance procedures and designed/implemented technical solutions.~~
-~~- Developed scripts, tools, and integrations to automate and support core business operations.~~
+- Volunteer instructor – Tabletop RPG Development.
+Led a team of junior instructors in designing and running seasonal role-playing games for teenagers. Responsible for game concepts, rules, and training game masters.
+- Water expedition organizer.
+At ANO "First Summit", planned a route and coordinated the work of those in charge of equipment and provisions.
+- Water tourism instructor.
+Served as Deputy Leader on a Class I expedition and as Instructor on a Class II expedition. Developed the route, organized training trips, and provided technical and methodological support to participants.
 
 ---
 
 ### Skills & Tools
 
-- 3D Modeling: Blender (high-poly, game-ready), Substance Painter, basic Figma
+- 3D Modeling: Blender (high-poly, low-poly, game-ready), Substance Painter (★{:.red}), Figma
 
-- Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization)
+- Project Management: Kanban boards, Obsidian (knowledge base), Syncthing (asset synchronization), git (file synchronization)
 
 - Leadership & Organization: team building, distributed workflow coordination, documentation management
 
-- Water Tourism: Instructor (Class II routes), Deputy Leader (Class I routes), route planning, training organization
-
 - Teaching: mentoring teenagers in game design and running role-playing games
 
----
+- Water Tourism: Instructor (Class II routes), Deputy Leader (Class I routes), route planning, training organization
+
 ---
 
 ### Education
 
-**Degree in Economics**  
-**Università Ca’ Foscari Venezia** — Venice, Italy  
-*Graduated 2000*
+**ANO PO "IT HUB"** — Moscow, Russia
+**3D game artist**
+*I'm still learning*
 
-**High School Diploma**  
-Venice, Italy
+**Diploma of secondary education**  
+Moscow, Russia
 
-**Military Service**  
-Lagunari – Italian Amphibious Troops
+**ANO "Первая вершина" / Pioneer squad "Сигнальщики"** — Moscow, Russia
+**Tourism instructor, leader**
 
 ---
 
