@@ -2,8 +2,15 @@
 ---
 @charset "utf-8";
 
-$link-color: #e8346c !default;
+/* Мои личные настройки цветов */
+$primary-color: #6b3e70 !default;
+$link-color: #d8498b !default;
+$footer-background-color: #1a1a1a !default;
 
+/* Мои CSS-правила для боковой панели */
+.sidebar {
+    border-right: 2px solid $primary-color;
+}
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
