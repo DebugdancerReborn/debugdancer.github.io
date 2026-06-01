@@ -19,7 +19,7 @@ repository: debugdancerreborn/debugdancerreborn.github.io   # Important for GitH
 # ---------------------------------------------------------------
 
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"   # You can update the version later if needed
-minimal_mistakes_skin: "dark"                       # Options: default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+minimal_mistakes_skin: "neon"                       # Options: default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
 # ---------------------------------------------------------------
 # Build Settings
