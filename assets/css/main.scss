@@ -2,7 +2,8 @@
 ---
 @charset "utf-8";
 
-
+$link-color: #ff3366 !default;
+$primary-color: #CB2821 !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
