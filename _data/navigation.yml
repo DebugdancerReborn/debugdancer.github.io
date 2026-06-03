@@ -1,8 +1,8 @@
 main:
   - title: "Home"
     url: /
-  - title: "vForth"
-    url: /vforth/
+  - title: "Projects"
+    url: /projects/
   - title: "Links"
     url: /links/
   - title: "Resume"

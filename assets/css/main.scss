@@ -2,8 +2,80 @@
 ---
 @charset "utf-8";
 
-$link-color: #ff3366 !default;
-$primary-color: #CB2821 !default;
+// Castom var
+$link-color: #ff0800 !default;
+$primary-color: #844fd9 !default;
+$max-width: 1600px;   // по умолчанию 1280px, увеличьте до 1600 или 1800
 
+// Main thems
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
+
+// Castom css
+.stars {color: #844fd9;}
+
+
+
+// Ссылки внутри статьи: белые, подчёркнутые, при ховере красные
+.page__content a {
+  color: $primary-color;               // наследует белый цвет от родительского текста
+  text-decoration: underline;   // подчёркивание
+
+  &:hover {
+    color: $link-color;      // красный (#CB2821)
+    text-decoration: underline; // можно оставить или убрать
+  }
+}
+
+.toc__menu a {
+  color: inherit;            // наследуют цвет текста (белый)
+  font-weight: normal;
+  text-decoration: none;
+  
+  &:hover {
+    opacity: 1;
+    color: $link-color;
+    text-decoration: none;// добавить подчёркивание при наведении
+  }
+}
+
+
+%card {
+  background: #1d2029;
+  border-radius: 20px;
+  padding: 1.2rem 1.5rem;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 
+    0 8px 15px rgba(0, 0, 0, 0.3),
+    inset 0 5px 5px rgba(196, 67, 214, 0.25);
+  &:hover {
+    transform: translateY(-4px);
+  box-shadow: 
+    0 15px 25px rgba(0, 0, 0, 0.5),
+    inset 0 8px 6px rgba(196, 67, 214, 0.25);
+  }
+}
+
+.one-column-list {
+  > div {
+    @extend %card;}
+  //display: flex;
+  // gap: 2rem;
+  //flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.two-column-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  > div {
+    @extend %card;
+    flex: 1;
+    min-width: 250px;
+  }
+}
