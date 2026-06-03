@@ -79,13 +79,11 @@ I combine creative thinking with the organizational abilities I've honed through
 
 <div class="one-column-list">
   <div>
-    <h4>Leadership & Organization:</h4>
+    <h4>Other Skills:</h4>
     <ul>
-      <li>team building <span class="stars">★★★</span>★★</li>
-      <li>Figma <span class="stars">★★★★</span>★</li>
-      <li>Obsidian <span class="stars">★★★</span>★★</li>
-      <li>Kanban boards <span class="stars">★★★★</span>★</li>
-      <li>Syncthing <span class="stars">★★★★</span>★</li>
+      <li>Leadership & Organization: team building, distributed workflow coordination, documentation management</li>
+      <li>Teaching: mentoring teenagers in game design and running role-playing games</li>
+      <li>Water Tourism: Instructor (Class II routes), Deputy Leader (Class I routes), route planning, training organization</li>
     </ul>
   </div>
 </div>
