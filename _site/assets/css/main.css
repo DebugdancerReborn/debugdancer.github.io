@@ -1331,10 +1331,16 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .toc__menu a { color: inherit; font-weight: normal; text-decoration: none; }
 .toc__menu a:hover { opacity: 1; color: #ff0800; text-decoration: none; }
 
-.one-column-list > div, .two-column-list > div { background: #1d2029; border-radius: 20px; padding: 1.2rem 1.5rem; position: relative; transition: all 0.2s ease; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 5px 5px rgba(196, 67, 214, 0.25); }
-.one-column-list > div:hover, .two-column-list > div:hover { transform: translateY(-4px); box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), inset 0 8px 6px rgba(196, 67, 214, 0.25); }
+.one-column-list > div, .two-column-list > div, .gallery-card-list > div { background: #1d2029; border-radius: 20px; padding: 1.2rem 1.5rem; position: relative; transition: all 0.2s ease; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 5px 5px rgba(196, 67, 214, 0.25); }
+.one-column-list > div:hover, .two-column-list > div:hover, .gallery-card-list > div:hover { transform: translateY(-4px); box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), inset 0 8px 6px rgba(196, 67, 214, 0.25); }
 
 .one-column-list { margin-top: 1rem; margin-bottom: 0.5rem; }
 
 .two-column-list { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1rem; margin-bottom: 0.5rem; }
 .two-column-list > div { flex: 1; min-width: 250px; }
+
+.gallery-card-list { text-align: center; }
+.gallery-card-list > div { margin-bottom: 1rem; }
+.gallery-card-list > div p { margin-bottom: 0; }
+.gallery-card-list > div .image-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, auto)); gap: 1rem; justify-content: center; align-items: start; margin-bottom: 1rem; }
+.gallery-card-list > div .image-group img { width: 100%; height: auto; max-height: 300px; border-radius: 8px; object-fit: contain; }

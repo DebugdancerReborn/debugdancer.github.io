@@ -16,7 +16,7 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
 
 
 
-// Ссылки внутри статьи: белые, подчёркнутые, при ховере красные
+//#region ссылки
 .page__content a {
   color: $primary-color;               // наследует белый цвет от родительского текста
   text-decoration: underline;   // подчёркивание
@@ -38,8 +38,9 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
     text-decoration: none;// добавить подчёркивание при наведении
   }
 }
+//#endregion
 
-
+//#region 3Д карточки
 %card {
   background: #1d2029;
   border-radius: 20px;
@@ -57,6 +58,7 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
   }
 }
 
+//одноколоночные карточки
 .one-column-list {
   > div {
     @extend %card;}
@@ -67,15 +69,50 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
   margin-bottom: 0.5rem;
 }
 
+//дву-колоночные карточки
 .two-column-list {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
   > div {
     @extend %card;
     flex: 1;
     min-width: 250px;
   }
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
+
+
+// Галерея карточек для изображений (отдельный класс)
+.gallery-card-list {
+  text-align: center;
+  > div {
+    @extend %card;
+    margin-bottom: 1rem;
+    //text-align: center;
+
+    p {
+        margin-bottom: 0;
+      }
+
+    .image-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+      gap: 1rem;
+      justify-content: center;   // центрирует сетку, если колонки не занимают всю ширину
+      align-items: start;
+      margin-bottom: 1rem;
+      
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        border-radius: 8px;
+        object-fit: contain;
+      }
+    }
+    // остальное без изменений
+  }
+}
+//#endregion
