@@ -569,24 +569,67 @@ Feedback and pull requests are always welcome!</p>
       </footer>
     </div>
 
-    
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.gallery-card-list .card-item');
+    if (!cards.length) return;
 
-  <script src="/assets/js/main.min.js"></script>
+    // Создаём модальное окно один раз
+    const modalOverlay = document.createElement('div');
+    modalOverlay.className = 'modal-overlay';
+    const modalContentDiv = document.createElement('div');
+    modalContentDiv.className = 'modal-content';
+    const closeBtn = document.createElement('span');
+    closeBtn.innerHTML = '&times;';
+    closeBtn.className = 'close-modal';
+    modalContentDiv.appendChild(closeBtn);
+    modalOverlay.appendChild(modalContentDiv);
+    document.body.appendChild(modalOverlay);
 
+    function openModal(contentClone) {
+      // Очищаем предыдущее содержимое, оставляем кнопку
+      while (modalContentDiv.children.length > 1) {
+        modalContentDiv.removeChild(modalContentDiv.lastChild);
+      }
+      modalContentDiv.appendChild(contentClone);
+      modalOverlay.classList.add('active');
+      document.body.classList.add('modal-open');
+    }
 
+    function closeModal() {
+      modalOverlay.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
 
+    closeBtn.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', function(e) {
+      if (e.target === modalOverlay) closeModal();
+    });
 
+    cards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        const imageGroup = card.querySelector('.image-group');
+        const p = card.querySelector('p');
+        if (!imageGroup) return;
 
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
+        const cloneContainer = document.createElement('div');
+        const cloneImageGroup = imageGroup.cloneNode(true);
+        const cloneP = p ? p.cloneNode(true) : null;
+        cloneContainer.appendChild(cloneImageGroup);
+        if (cloneP) cloneContainer.appendChild(cloneP);
 
-
-
-
-
-
-
-
+        // Добавляем заголовок
+        const title = card.querySelector('.card-title');
+        if (title) {
+          const titleClone = document.createElement('h2');
+          titleClone.textContent = title.textContent;
+          titleClone.style.marginBottom = '1rem';
+          cloneContainer.insertBefore(titleClone, cloneImageGroup);
+        }
+        openModal(cloneContainer);
+      });
+    });
+  });
+</script>
   </body>
 </html>
