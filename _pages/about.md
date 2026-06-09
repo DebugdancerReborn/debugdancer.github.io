@@ -1,37 +1,48 @@
 ---
-title: "About Me"
+title: "Rebenko Georgy"
 permalink: /about/
 layout: single
 author_profile: true
 toc: false
+header:
+  overlay_image: /assets/images/venice-area.jfif
+  overlay_filter: 0.4
 ---
+## About me
 
-### Hello, I'm Matteo Vitturi
+### In a nutshell
 
-I am a **Senior Application Operations Engineer** at **Capgemini** based in the Venice area, Italy, with over 25 years of experience in technical analysis, application operations, and insurance systems.
+My name is Georgy. I'm a hard surface 3D artist working remotely from Gyumri, Armenia.  
+I was born in Moscow, Russia, and moved here in 2026 — that's how life went.
 
-After graduating with a degree in Economics from **Università Ca’ Foscari Venezia** in 2000, I built my career bridging business needs with robust technical solutions. I previously worked as an IT Technical Analyst at AIVE, where I focused on process automation and system integration.
-
-### My Passion: Forth & Retro Computing
-
-Beyond my professional work, I have a deep and long-standing interest in low-level programming. Since 1990 I have been developing and maintaining **vForth**, a Forth system designed for the ZX Spectrum 48K and particularly optimized for the **ZX Spectrum Next**.
-
-I actively contribute to the ZX Spectrum Next community through:
-- Development of **vforth-next**, with full Z80N instruction set support and hardware integration (Layer 2, sprites, DMA, copper, sound, etc.)
-- Technical articles published on the official **[SpecNext Developer HQ](https://specnext.dev/blog/topic/software/forth/)**
-- Videos and presentations on my **[YouTube channel @mttsteel](https://www.youtube.com/@mttsteel)**
-- Administering the Facebook group **[Forth on the ZX Spectrum, Next and 48K](https://www.facebook.com/groups/1326098804442710)**
-
-I also maintain an interest in quantum computing and occasionally contribute to discussions on Quantum Computing Stack Exchange.
-
-### A Bit About Me
-
-Born and raised in Venice, I served with the Lagunari (Italian amphibious troops) after high school before completing my university studies. I speak Italian, Venetian, English, and French.
-
-When I'm not working or coding, you can often find me exploring new Forth techniques, experimenting with retro hardware, or playing guitar.
+I didn't come to 3D through an art school or design degree. I started as a game programming student, but realized math wasn't my thing. Meanwhile, I had been slowly learning Blender on the side — and it started to work. So I switched to becoming a 3D artist.
 
 ---
 
-Feel free to explore my **[projects](/projects/)**, **[vForth](/vforth/)** section, or connect with me on [GitHub](https://github.com/mattsteeldue), [LinkedIn](https://www.linkedin.com/in/matteovitturi/), or [X @mattsteel](https://twitter.com/mattsteel).
+### How I learn and work
 
-I'm always happy to discuss Forth, ZX Spectrum Next, or technical challenges in general.
+I'm self‑taught with about six years of experience, the last four of which have been actual, solid work — results I'm happy to show.
+
+I'm most comfortable with **hard surface**: weapons, armor, machinery, props, environments. It's not that I think organic modeling is bad — it's that I honestly don't know how to do it. So I focus on what I know and can deliver with good quality.
+
+My pipeline: from blockout to finished model and textures. I use Blender, Substance Designer, Painter, a bit of ZBrush and Maya. I've taken part in Ludum Dare as a 3D artist and team lead.
+
+---
+
+### Beyond 3D
+
+Before fully committing to modeling, I did a few other things: I ran tabletop RPG clubs for teenagers, worked as a water tourism instructor, and led teams. That experience taught me self‑organization, planning, and how not to fall apart when working remotely without an office or a supervisor.
+
+Now my main goal is to make good, clean hard surface models and find projects where they're actually needed.
+
+---
+
+### What I'm looking for
+
+I'm looking for remote full‑time work or project‑based jobs.  
+I'm interested in studios and teams that value results over fancy words — clean topology, proper bakes, well‑thought‑out textures, and models that are easy to hand over to an engine.
+
+If you think I might fit — feel free to reach out.  
+I'll reply in Russian or English (B2).
+
+---

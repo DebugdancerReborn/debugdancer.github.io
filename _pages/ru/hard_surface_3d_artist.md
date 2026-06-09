@@ -1,6 +1,6 @@
 ---
-title: "Hard Surface 3D Artist"
-permalink: /vforth/
+title: "Resume"
+permalink: /hard_surface_3d_artist/
 layout: single
 author_profile: true
 toc: true
@@ -58,7 +58,7 @@ toc: true
     <ul>
       <li>Blender <span class="stars">★★★★★</span></li>
       <li>Autodesk Maya <span class="stars">★★</span>★★★</li>
-      <li>ZBrush <span class="stars">★★</span>★★★</li>
+      <li>ZBrush <span class="stars">★★★</span>★★</li>
       <li>Unity <span class="stars">★★★</span>★★</li>
       <li>Unreal Engine <span class="stars">★★★</span>★★</li>
     </ul>

@@ -11,8 +11,6 @@ toc: true
 **hard surface 3D artist**  
 Gyumri, Armenia  
 
-~~[GitHub](https://github.com/mattsteeldue) • [YouTube](https://www.youtube.com/@mttsteel) • [X/Twitter](https://twitter.com/mattsteel) • [LinkedIn](https://www.linkedin.com/in/matteovitturi/) • [itch](https://mattsteel.itch.io)~~
-
 ---
 
 ### Professional Summary

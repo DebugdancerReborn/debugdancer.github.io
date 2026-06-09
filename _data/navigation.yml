@@ -1,12 +1,24 @@
 main:
   - title: "Home"
-    url: /
+    url: /about/
+  - title: "Resume"
+    url: "#"
+    children:
+      - title: "3D artist resume"
+        url: /hard_surface_3d_artist/
+      - title: '<p style="color: #0C112A; font-size: 15px;">in development</p>'
+        url: "#"
+      - title: "Overall resume"
+        url: /overall_resume/
   - title: "Projects"
-    url: /projects/
+    url: "#"
+    children:
+      - title: "3D projects"
+        url: /projects/
+      - title: '<p style="color: #0C112A; font-size: 15px;">in development</p>'
+        url: "#"
+      - title: '<p style="color: #0C112A; font-size: 15px;">in development</p>'
+        url: "#"
   - title: "Links"
     url: /links/
-  - title: "Resume"
-    url: /resume/
-  - title: "GitHub"
-    url: https://github.com/mattsteeldue
     target: _blank

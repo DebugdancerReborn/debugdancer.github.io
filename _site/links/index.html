@@ -77,12 +77,15 @@
 
 
 
-    <!-- start custom head snippets -->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K1K5WQ90JQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->
-
+  gtag('config', 'G-K1K5WQ90JQ');
+</script>
   </head>
 
   <body class="layout--single" dir="ltr">
@@ -103,46 +106,61 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt="Rebenko Georgy"></a>
+        
         <a class="site-title" href="/">
           Rebenko Georgy
           <span class="site-subtitle">Hard Surface and Prop Modeler &amp; Tile texturing</span>
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a
-                href="/"
-                
-                
-              >Home</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/projects/"
-                
-                
-              >Projects</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/links/"
-                
-                
-              >Links</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/resume/"
-                
-                
-              >Resume</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="https://github.com/mattsteeldue"
-                
-                 target="_blank"
-              >GitHub</a>
-            </li></ul>
+        <ul class="visible-links">
         
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">Toggle search</span>
-          <i class="fas fa-search"></i>
-        </button>
+        
+        <li class="masthead__menu-item">
+          <a href="/about/" >Home</a>
+        </li>
+      
+    
+        
+          <li class="masthead__menu-item dropdown">
+          <a href="#" class="dropdown-toggle" >
+            Resume <span class="caret">▼</span>
+          </a>
+          <ul class="dropdown-menu">
+            
+              <li><a href="/hard_surface_3d_artist/" >3D artist resume</a></li>
+            
+              <li><a href="#" ><p style="color: #0C112A; font-size: 15px;">in development</p></a></li>
+            
+              <li><a href="/overall_resume/" >Overall resume</a></li>
+            
+          </ul>
+        </li>
+      
+    
+        
+          <li class="masthead__menu-item dropdown">
+          <a href="#" class="dropdown-toggle" >
+            Projects <span class="caret">▼</span>
+          </a>
+          <ul class="dropdown-menu">
+            
+              <li><a href="/projects/" >3D projects</a></li>
+            
+              <li><a href="#" ><p style="color: #0C112A; font-size: 15px;">in development</p></a></li>
+            
+              <li><a href="#" ><p style="color: #0C112A; font-size: 15px;">in development</p></a></li>
+            
+          </ul>
+        </li>
+      
+    
+        
+        <li class="masthead__menu-item">
+          <a href="/links/" target="_blank">Links</a>
+        </li>
+      
+    
+        </ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -153,7 +171,6 @@
     </div>
   </div>
 </div>
-
 
     <div class="initial-content">
       
@@ -206,7 +223,7 @@
       
         
           
-            <li><a href="https://www.linkedin.com/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">--LinkedIn--</span></a></li>
+            <li><a href="https://www.linkedin.com/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label"><del>LinkedIn<del></span></a></li>
           
         
           
@@ -390,18 +407,6 @@ Example code and contributions shared with the community.</p>
     </div>
 
     
-      <div class="search-content">
-        
-<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
-    <label class="sr-only" for="search">
-      Enter your search term...
-    </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-  </form>
-  <div id="results" class="results"></div></div>
-
-      </div>
-    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -430,66 +435,128 @@ Example code and contributions shared with the community.</p>
     </div>
 
     <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.gallery-card-list .card-item');
-    if (!cards.length) return;
+  if (!window.scriptsInitialized) {
+    window.scriptsInitialized = true;
 
-    // Создаём модальное окно один раз
-    const modalOverlay = document.createElement('div');
-    modalOverlay.className = 'modal-overlay';
-    const modalContentDiv = document.createElement('div');
-    modalContentDiv.className = 'modal-content';
-    const closeBtn = document.createElement('span');
-    closeBtn.innerHTML = '&times;';
-    closeBtn.className = 'close-modal';
-    modalContentDiv.appendChild(closeBtn);
-    modalOverlay.appendChild(modalContentDiv);
-    document.body.appendChild(modalOverlay);
+    document.addEventListener('DOMContentLoaded', function() {
+      // ========== ВЫПАДАЮЩИЕ СПИСКИ ==========
+      const dropdowns = document.querySelectorAll('.masthead__menu-item.dropdown');
+      console.log('Найдено dropdown элементов:', dropdowns.length);
 
-    function openModal(contentClone) {
-      // Очищаем предыдущее содержимое, оставляем кнопку
-      while (modalContentDiv.children.length > 1) {
-        modalContentDiv.removeChild(modalContentDiv.lastChild);
+      function closeAllDropdowns(exceptMenu = null) {
+        dropdowns.forEach(dropdown => {
+          const menu = dropdown.querySelector('.dropdown-menu');
+          if (menu && menu !== exceptMenu) {
+            menu.classList.remove('show');
+          }
+        });
       }
-      modalContentDiv.appendChild(contentClone);
-      modalOverlay.classList.add('active');
-      document.body.classList.add('modal-open');
-    }
 
-    function closeModal() {
-      modalOverlay.classList.remove('active');
-      document.body.classList.remove('modal-open');
-    }
+      function toggleDropdown(menu) {
+        menu.classList.toggle('show');
+      }
 
-    closeBtn.addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', function(e) {
-      if (e.target === modalOverlay) closeModal();
-    });
+      dropdowns.forEach(dropdown => {
+        const toggleLink = dropdown.querySelector('.dropdown-toggle');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
 
-    cards.forEach(card => {
-      card.addEventListener('click', (e) => {
-        const imageGroup = card.querySelector('.image-group');
-        const p = card.querySelector('p');
-        if (!imageGroup) return;
+        if (!toggleLink || !dropdownMenu) return;
 
-        const cloneContainer = document.createElement('div');
-        const cloneImageGroup = imageGroup.cloneNode(true);
-        const cloneP = p ? p.cloneNode(true) : null;
-        cloneContainer.appendChild(cloneImageGroup);
-        if (cloneP) cloneContainer.appendChild(cloneP);
+        toggleLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          const isVisible = dropdownMenu.classList.contains('show');
+          closeAllDropdowns(dropdownMenu);
+          if (!isVisible) {
+            toggleDropdown(dropdownMenu);
+          }
+        });
 
-        // Добавляем заголовок
-        const title = card.querySelector('.card-title');
-        if (title) {
-          const titleClone = document.createElement('h2');
-          titleClone.textContent = title.textContent;
-          titleClone.style.marginBottom = '1rem';
-          cloneContainer.insertBefore(titleClone, cloneImageGroup);
-        }
-        openModal(cloneContainer);
+        dropdownMenu.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
       });
+
+      document.addEventListener('click', function() {
+        closeAllDropdowns();
+      });
+
+      // ========== ГАЛЕРЕЯ С МОДАЛЬНЫМИ ОКНАМИ ==========
+      const cards = document.querySelectorAll('.gallery-card-list .card-item');
+      if (cards.length) {
+        // Создаём модальное окно один раз
+        const modalOverlay = document.createElement('div');
+        modalOverlay.className = 'modal-overlay';
+        const modalContentDiv = document.createElement('div');
+        modalContentDiv.className = 'modal-content';
+        const closeBtn = document.createElement('span');
+        closeBtn.innerHTML = '&times;';
+        closeBtn.className = 'close-modal';
+        modalContentDiv.appendChild(closeBtn);
+        modalOverlay.appendChild(modalContentDiv);
+        document.body.appendChild(modalOverlay);
+
+        function openModal(contentElements) {
+          // Очищаем всё, кроме кнопки закрытия
+          while (modalContentDiv.children.length > 1) {
+            modalContentDiv.removeChild(modalContentDiv.lastChild);
+          }
+          // Добавляем склонированное содержимое
+          contentElements.forEach(el => {
+            modalContentDiv.appendChild(el);
+          });
+          modalOverlay.classList.add('active');
+          document.body.classList.add('modal-open');
+        }
+
+        function closeModal() {
+          modalOverlay.classList.remove('active');
+          document.body.classList.remove('modal-open');
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', function(e) {
+          if (e.target === modalOverlay) closeModal();
+        });
+
+        cards.forEach(card => {
+          card.addEventListener('click', (e) => {
+            // Клонируем заголовок
+            const titleEl = card.querySelector('.card-title');
+            const titleClone = titleEl ? document.createElement('h2') : null;
+            if (titleClone) {
+              titleClone.textContent = titleEl.textContent;
+              titleClone.style.marginBottom = '1rem';
+            }
+
+            // Клонируем группу изображений
+            const imageGroup = card.querySelector('.image-group');
+            const imageGroupL = card.querySelector('.image-group-large');
+            const imageGroupClone = imageGroup ? imageGroup.cloneNode(true) : null;
+            const imageGroupLClone = imageGroupL ? imageGroupL.cloneNode(true) : null;
+
+            // Клонируем ВСЕ параграфы
+            const paragraphs = card.querySelectorAll('p');
+            const paragraphClones = [];
+            paragraphs.forEach(p => {
+              paragraphClones.push(p.cloneNode(true));
+            });
+
+            // Собираем все элементы для модального окна в нужном порядке
+            const contentToShow = [];
+            if (titleClone) contentToShow.push(titleClone);
+            if (imageGroupClone) contentToShow.push(imageGroupClone);
+            if (imageGroupLClone) contentToShow.push(imageGroupLClone);
+            paragraphClones.forEach(clone => contentToShow.push(clone));
+
+            if (contentToShow.length === 0) return; // нечего показывать
+
+            openModal(contentToShow);
+          });
+        });
+      }
     });
-  });
+  }
 </script>
   </body>
 </html>

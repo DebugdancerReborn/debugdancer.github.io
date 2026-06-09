@@ -3,7 +3,7 @@
 @charset "utf-8";
 
 // Castom var
-$link-color: #ff0800 !default;
+$link-color: #C443D6 !default;
 $primary-color: #844fd9 !default;
 $max-width: 1600px;   // по умолчанию 1280px, увеличьте до 1600 или 1800
 
@@ -27,15 +27,17 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
   }
 }
 
-.toc__menu a {
-  color: inherit;            // наследуют цвет текста (белый)
-  font-weight: normal;
-  text-decoration: none;
-  
-  &:hover {
-    opacity: 1;
-    color: $link-color;
-    text-decoration: none;// добавить подчёркивание при наведении
+.toc__menu {
+  a {
+    color: inherit;            // наследуют цвет текста (белый)
+    font-weight: normal;
+    text-decoration: none;
+    
+    &:hover {
+      opacity: 1;
+      color: $link-color;
+      text-decoration: none;// добавить подчёркивание при наведении
+    }
   }
 }
 //#endregion
@@ -91,7 +93,7 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
   gap: 1.5rem;
   justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 
   .card-item {
     @extend %card;
@@ -112,6 +114,13 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
       display: flex;
       align-items: center;
       justify-content: center;
+
+      img {
+        width: 100%;
+        max-height: 200px;    // картинки не будут выше 200px
+        height: auto;
+        object-fit: contain;  // вписывает целиком, могут быть пустые поля
+      }
       
       img:first-child {
         display: block;
@@ -121,6 +130,37 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
         height: auto;
         object-fit: contain;     // сохраняем пропорции, не обрезаем
         margin: 0 auto;
+        border-radius: 12px;
+      }
+      // Остальные картинки скрыты
+      img:not(:first-child) {
+        display: none;
+      }
+    }
+    .image-group-large {
+      width: 100%;
+      // Ограничиваем область картинки
+      max-height: 120px;         // оставляем место для заголовка
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-height: 200px;    // картинки не будут выше 200px
+        height: auto;
+        object-fit: contain;  // вписывает целиком, могут быть пустые поля
+      }
+      
+      img:first-child {
+        display: block;
+        max-width: 100%;
+        max-height: 120px;       // картинка не вылезет
+        width: auto;
+        height: auto;
+        object-fit: contain;     // сохраняем пропорции, не обрезаем
+        margin: 0 auto;
+        border-radius: 12px;
       }
       // Остальные картинки скрыты
       img:not(:first-child) {
@@ -192,17 +232,30 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
 
   .image-group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
     img {
       width: 100%;
+      max-height: 500px;
       height: auto;
-      border-radius: 8px;
+      object-fit: contain;
+    }
+  }
+  .image-group-large {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 1rem;
+    img {
+      width: 100%;
+      max-height: 500px;
+      height: auto;
+      object-fit: contain;
     }
   }
 
   p {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
     text-align: left;
   }
 }
@@ -210,4 +263,74 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
 body.modal-open {
   overflow: hidden;
 }
+//#endregion
+
+//#region Dropdown для верхней навигации (чистое решение, без !important)
+// 1. Убираем обрезку меню у родительских контейнеров (это часто бывает причиной)
+.masthead__inner-wrap,
+.greedy-nav,
+.visible-links {
+  overflow: visible !important;
+}
+
+// 2. Базовые стили для выпадающего меню (наследуются, если не заданы в теме)
+.masthead__menu-item.dropdown {
+  position: relative;
+  
+  .dropdown-menu {
+    display: none;           // скрыто по умолчанию
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #252a34;
+    border: 1px solid #51555d;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    margin: 0;
+    list-style: none;
+    z-index: 100;
+    min-width: 180px;
+    
+    li {
+      display: block;
+      white-space: nowrap;
+      
+      a {
+        display: block;
+        padding: 0.4rem 1rem;
+        text-align: center;
+        color: #eaeaea;
+        text-decoration: none;
+        &:hover {
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// 3. Показываем меню при добавлении класса .show (JavaScript)
+//    Используем повышенную специфичность, чтобы перебить возможные стили темы.
+.masthead__menu-item.dropdown .dropdown-menu.show {
+  display: block;
+  // visibility, opacity и остальные свойства не нужны, если они не переопределены в теме,
+  // но оставляем на всякий случай (без !important)
+  visibility: visible;
+  opacity: 1;
+  // Координаты и позиционирование уже заданы выше, поэтому их можно не повторять,
+  // но если тема их сбрасывает – повторим:
+  position: absolute;
+  top: 100%;
+  // left: 0;
+  z-index: 9999;
+}
+
+// 4. Стиль для стрелки ▼
+.caret {
+  font-size: 0.7em;
+  margin-left: 4px;
+}
+
 //#endregion
