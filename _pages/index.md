@@ -2,7 +2,7 @@
 title: "Matteo Vitturi"
 layout: single
 author_profile: true
-permalink: /
+permalink: /index/
 header:
   overlay_image: /assets/images/venice-area.jfif
   overlay_filter: 0.4

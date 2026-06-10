@@ -1,12 +1,12 @@
 ---
 title: "Rebenko Georgy"
-permalink: /about/
+permalink: /
 layout: single
 author_profile: true
 toc: false
 header:
-  overlay_image: /assets/images/venice-area.jfif
-  overlay_filter: 0.4
+  overlay_image: /assets/images/overlay.png
+  overlay_filter: 0.1
 ---
 ## About me
 

@@ -1325,6 +1325,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
 .stars { color: #844fd9; }
 
+.site-logo img { filter: drop-shadow(5px 0 6px #844fd9) drop-shadow(0 0 12px #C443D6); transition: filter 0.3s ease-in-out; }
+.site-logo img:hover { filter: drop-shadow(5px 0 6px #C443D6) drop-shadow(0 0 20px #C443D6); }
+
 .page__content a { color: #844fd9; text-decoration: underline; }
 .page__content a:hover { color: #C443D6; text-decoration: underline; }
 

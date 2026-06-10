@@ -14,7 +14,15 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
 // Castom css
 .stars {color: #844fd9;}
 
-
+//#region
+.site-logo img {
+  filter: drop-shadow(5px 0 6px $primary-color) drop-shadow(0 0 12px $link-color);
+  transition: filter 0.3s ease-in-out;
+  &:hover{
+    filter: drop-shadow(5px 0 6px $link-color) drop-shadow(0 0 20px $link-color);
+  }
+}
+//#endregion
 
 //#region ссылки
 .page__content a {
@@ -265,7 +273,7 @@ body.modal-open {
 }
 //#endregion
 
-//#region Dropdown для верхней навигации (чистое решение, без !important)
+//#region Dropdown для верхней навигации
 // 1. Убираем обрезку меню у родительских контейнеров (это часто бывает причиной)
 .masthead__inner-wrap,
 .greedy-nav,

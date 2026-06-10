@@ -1,6 +1,6 @@
 main:
-  - title: "Home"
-    url: /about/
+  - title: "About Me"
+    url: /
   - title: "Resume"
     url: "#"
     children:
