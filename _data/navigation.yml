@@ -19,6 +19,4 @@ main:
         url: "#"
       - title: '<p style="color: #0C112A; font-size: 15px;">in development</p>'
         url: "#"
-  - title: "Links"
-    url: /links/
     target: _blank
