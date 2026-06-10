@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ========================================================================== Dark skin ========================================================================== */
 /* Colors */
 .author__urls.social-icons i, .author__urls.social-icons .svg-inline--fa, .page__footer-follow .social-icons i, .page__footer-follow .social-icons .svg-inline--fa { color: inherit; }
@@ -1381,3 +1382,27 @@ body.modal-open { overflow: hidden; }
 .masthead__menu-item.dropdown .dropdown-menu.show { display: block; visibility: visible; opacity: 1; position: absolute; top: 100%; z-index: 9999; }
 
 .caret { font-size: 0.7em; margin-left: 4px; }
+
+.btn-print-pdf { background: #844fd9; color: white; border: none; width: 100%; height: 2rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-bottom: 1rem; transition: background 0.2s; }
+.btn-print-pdf:hover { background: #682cc9; }
+
+.print-only-header { display: none; /* скрыто на экране */ }
+
+.not-print-in-header { display: block; }
+
+@media print { .print-only-header { display: block !important; text-align: center; margin-bottom: 0; padding-bottom: 2rem; border-bottom: none !important; position: relative; min-height: 100px; }
+  .print-only-header img { position: absolute; left: 0; top: 0; width: 160px; height: auto; z-index: 1; }
+  .print-only-header h2 { margin: 0; font-size: 20pt; border-bottom: none !important; }
+  .print-only-header p { margin-top: 1rem; font-size: 12pt; }
+  .not-print-in-header { display: none; }
+  .stars { display: inline !important; color: #000 !important; background: none !important; }
+  .masthead, .page__footer, .sidebar, .author__avatar, .author__bio, .author__links, .toc, .btn-print-pdf, .greedy-nav, .page__meta, .comment__date, .page__share, .page__comments, .sr-only { display: none !important; }
+  .page__content { margin: 0 !important; padding: 0 !important; width: 100% !important; font-size: 12pt; line-height: 1.4; color: #000; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }
+  a[href^="#"]::after { content: ""; }
+  * { background: transparent !important; box-shadow: none !important; text-shadow: none !important; }
+  img { max-width: 100% !important; page-break-inside: avoid; }
+  p, h1, h2, h3, h4, h5, h6, li { page-break-inside: avoid; }
+  @page { margin: 1.5cm; } }
+h1, h2, h3, h4, h5, h6 { border-bottom: none !important; }
+h1 h1::after, h1 h2::after, h1 h3::after, h1 h4::after, h1 h5::after, h1 h6::after, h2 h1::after, h2 h2::after, h2 h3::after, h2 h4::after, h2 h5::after, h2 h6::after, h3 h1::after, h3 h2::after, h3 h3::after, h3 h4::after, h3 h5::after, h3 h6::after, h4 h1::after, h4 h2::after, h4 h3::after, h4 h4::after, h4 h5::after, h4 h6::after, h5 h1::after, h5 h2::after, h5 h3::after, h5 h4::after, h5 h5::after, h5 h6::after, h6 h1::after, h6 h2::after, h6 h3::after, h6 h4::after, h6 h5::after, h6 h6::after { display: none !important; }

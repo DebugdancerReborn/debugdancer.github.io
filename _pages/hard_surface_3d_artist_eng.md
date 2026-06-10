@@ -7,10 +7,28 @@ toc: true
 toc_sticky: true
 ---
 
-### Rebenko Georgy
+<div class="not-print-in-header">
+  <h2>Rebenko Georgy</h2>
+  <p>
+    <strong>Hard Surface 3D Artist</strong><br>
+    <i>Gyumri, Armenia</i>
+  </p>
+</div>
 
-**Hard Surface 3D Artist**  
-Gyumri, Armenia
+<div class="print-only-header">
+  <div class="bio-and-name">
+    <img src="/assets/images/bio-photo.jpg" alt="Rebenko Georgy" width="80" style="border-radius: 50%;">
+    <h2>Rebenko Georgy</h2>
+  </div>
+  <p>
+    <strong>Hard Surface 3D Artist</strong><br>
+    Gyumri, Armenia<br>
+    <i class="fab fa-fw fa-telegram"></i> <a href="https://t.me/Debugdancer">Telegram</a><br>
+    <i class="fab fa-fw fa-whatsapp"></i> <a href="https://wa.me/79036826563">WhatsApp</a><br>
+    <i class="fas fa-fw fa-envelope"></i> <a href="mailto:gerrebenko@gmail.com">Email</a><br>
+    <i class="fab fa-fw fa-github"></i> <a href="https://github.com/DebugdancerReborn">GitHub</a>
+  </p>
+</div>
 
 ---
 
@@ -58,20 +76,20 @@ Participated in international game jams (Ludum Dare) as a 3D Artist and Team Lea
     <h4>Modeling:</h4>
     <ul>
       <li>Blender <span class="stars">★★★★★</span></li>
-      <li>Autodesk Maya <span class="stars">★★</span>★★★</li>
-      <li>ZBrush <span class="stars">★★★</span>★★</li>
-      <li>Unity <span class="stars">★★★</span>★★</li>
-      <li>Unreal Engine <span class="stars">★★★</span>★★</li>
+      <li>Autodesk Maya <span class="stars">★★</span>☆☆☆</li>
+      <li>ZBrush <span class="stars">★★★</span>☆☆</li>
+      <li>Unity <span class="stars">★★★</span>☆☆</li>
+      <li>Unreal Engine <span class="stars">★★★</span>☆☆</li>
     </ul>
   </div>
   <div>
     <h4>Management Tools:</h4>
     <ul>
-      <li>Git <span class="stars">★★★</span>★★</li>
-      <li>Figma <span class="stars">★★★★</span>★</li>
-      <li>Obsidian <span class="stars">★★★</span>★★</li>
-      <li>Kanban boards <span class="stars">★★★★</span>★</li>
-      <li>Syncthing <span class="stars">★★★★</span>★</li>
+      <li>Git <span class="stars">★★★</span>☆☆</li>
+      <li>Figma <span class="stars">★★★★</span>☆</li>
+      <li>Obsidian <span class="stars">★★★</span>☆☆</li>
+      <li>Kanban boards <span class="stars">★★★★</span>☆</li>
+      <li>Syncthing <span class="stars">★★★★</span>☆</li>
     </ul>
   </div>
 </div>
@@ -79,8 +97,8 @@ Participated in international game jams (Ludum Dare) as a 3D Artist and Team Lea
   <div>
     <h4>Texturing:</h4>
     <ul>
-      <li>Substance Designer <span class="stars">★★★★</span>★</li>
-      <li>Substance 3D Painter <span class="stars">★★★</span>★★</li>
+      <li>Substance Designer <span class="stars">★★★★</span>☆</li>
+      <li>Substance 3D Painter <span class="stars">★★★</span>☆☆</li>
     </ul>
   </div>
 </div>
@@ -147,3 +165,5 @@ Tourism instructor, group leader
 ---
 
 *Last updated: June 2026*
+
+{% include print-button.html %}

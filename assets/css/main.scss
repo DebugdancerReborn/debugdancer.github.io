@@ -12,7 +12,7 @@ $max-width: 1600px;   // по умолчанию 1280px, увеличьте до
 @import "minimal-mistakes";
 
 // Castom css
-.stars {color: #844fd9;}
+.stars {color: $primary-color;}
 
 //#region
 .site-logo img {
@@ -342,3 +342,143 @@ body.modal-open {
 }
 
 //#endregion
+
+//#region Скачивание pdf
+// Кнопка скачивания PDF
+.btn-print-pdf {
+  background: $primary-color;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+.print-only-header {
+  display: none; /* скрыто на экране */
+}
+
+.not-print-in-header{
+  display: block;
+}
+
+// Cкачиваниt PDF
+@media print {
+  .print-only-header {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    border-bottom: none !important;
+    position: relative;
+    min-height: 100px;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 160px;               // нужный размер фото
+      height: auto;
+      z-index: 1;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 20pt;
+      border-bottom: none !important;
+    }
+  }
+
+  .print-only-header p {
+    margin-top: 1rem;
+    font-size: 12pt;
+  }
+
+  .not-print-in-header{
+  display: none;
+  }
+
+  .stars {
+    display: inline !important;
+    color: #000 !important;
+    background: none !important;
+  }
+
+  // Скрываем всё, что не должно быть в PDF
+  .masthead,           // шапка с логотипом и меню
+  .page__footer,       // подвал
+  .sidebar,            // левая колонка (если есть)
+  .author__avatar,     // ваше фото
+  .author__bio,        // короткая биография в сайдбаре
+  .author__links,      // ссылки на соцсети
+  .toc,                // оглавление
+  .btn-print-pdf,      // сама кнопка печати
+  .greedy-nav,         // навигация (если другой класс)
+  .page__meta,         // мета-информация (дата обновления и т.д.)
+  .page__share,        // кнопки поделиться
+  .page__comments,     // комментарии
+  .sr-only {           // если используете скрытый для людей текст
+    display: none !important;
+  }
+
+  // Основной контент — на всю ширину
+  .page__content {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-size: 12pt;   // базовый шрифт для печати
+    line-height: 1.4;
+    color: #000;       // чёрный текст для экономии тонера
+  }
+
+  // Ссылки — печатать URL в скобках (полезно)
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    word-break: break-all;
+  }
+
+  // Но для якорных ссылок (#) не нужно
+  a[href^="#"]::after {
+    content: "";
+  }
+
+  // Отключаем фоновые цвета и тени (экономия тонера)
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  // Убедимся, что картинки не вылезают за границы
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  // Не разрывать абзацы и заголовки
+  p, h1, h2, h3, h4, h5, h6, li {
+    page-break-inside: avoid;
+  }
+
+  // Поля страницы (можно подобрать под свой вкус)
+  @page {
+    margin: 1.5cm;
+  }
+}
+//#endregion
+
+// Убираем автоматические подчёркивания у всех заголовков
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: none !important;
+  h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+  display: none !important;
+  }
+}

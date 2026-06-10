@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-permalink: /resume/
+permalink: /overall_resume/
 layout: single
 author_profile: true
 toc: true
